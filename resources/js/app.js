@@ -5,9 +5,13 @@ import { InertiaProgress } from '@inertiajs/progress'
 InertiaProgress.init()
 
 import VueMeta from 'vue-meta'
+import VueStyledShadows from 'vue-styled-shadows';
+import VueLazyload from 'vue-lazyload'
 
 Vue.use(plugin)
 Vue.use(VueMeta)
+Vue.use(VueLazyload)
+Vue.component('VueStyledShadows', VueStyledShadows);
 
 import AppLayout from "./Layouts/AppLayout";
 

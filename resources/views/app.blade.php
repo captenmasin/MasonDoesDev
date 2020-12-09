@@ -6,7 +6,7 @@
     <link href="{{ asset('css/app.css') }}?v={{ time() }}" rel="stylesheet">
     <script src="{{ mix('/js/app.js') }}" defer></script>
 </head>
-<body>
+<body class="bg-green-800">
 @inertia
 </body>
 </html>

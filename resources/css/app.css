@@ -1,3 +1,6 @@
+@import "inc/fonts.css";
+@import "inc/blend-modes.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Widebody Sans Super';
+    src: url('../../fonts/WidebodySansSuperItalic.eot');
+    src: url('../../fonts/WidebodySansSuperItalic.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/WidebodySansSuperItalic.woff2') format('woff2'),
+    url('../../fonts/WidebodySansSuperItalic.woff') format('woff'),
+    url('../../fonts/WidebodySansSuperItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Widebody Sans';
+    src: url('../../fonts/WidebodySansItalic.eot');
+    src: url('../../fonts/WidebodySansItalic.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/WidebodySansItalic.woff2') format('woff2'),
+    url('../../fonts/WidebodySansItalic.woff') format('woff'),
+    url('../../fonts/WidebodySansItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Widebody Sans';
+    src: url('../../fonts/WidebodySansRegular.eot');
+    src: url('../../fonts/WidebodySansRegular.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/WidebodySansRegular.woff2') format('woff2'),
+    url('../../fonts/WidebodySansRegular.woff') format('woff'),
+    url('../../fonts/WidebodySansRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Widebody Sans Super';
+    src: url('../../fonts/WidebodySansSuper.eot');
+    src: url('../../fonts/WidebodySansSuper.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/WidebodySansSuper.woff2') format('woff2'),
+    url('../../fonts/WidebodySansSuper.woff') format('woff'),
+    url('../../fonts/WidebodySansSuper.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
