@@ -5,32 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66116502-54ec-49c7-84c5-8f7eec3ffe90" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Models/Project.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Nova/Project.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Nova/Resource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Nova/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/nova.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_10_105040_create_projects_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/nova/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/nova/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/nova/manifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/nova/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/nova/vendor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/vendor/nova/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/vendor/nova/en/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/nova/partials/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/nova/partials/logo.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/nova/partials/meta.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/nova/partials/user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/masondoes.dev.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/masondoes.dev.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Projects.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Projects.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +185,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607528229711</updated>
-      <workItem from="1607528233424" duration="13963000" />
+      <workItem from="1607528233424" duration="14375000" />
     </task>
     <servers />
   </component>
