@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Project;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -10,5 +11,8 @@ Route::get('/', function () {
 });
 
 Route::get('/projects', function () {
-    return Inertia::render('Projects');
+    $projects = Project::all();
+    return Inertia::render('Projects', [
+        'projects' => $projects
+    ]);
 });

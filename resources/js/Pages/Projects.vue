@@ -9,7 +9,7 @@
                     <div class="w-full aspect-ratio-16/9 relative mb-2">
                         <a :href="project.web_link" class="absolute top-0 right-0 w-full h-full" v-if="project.image"
                            target="_blank">
-                            <img :alt="'Screenshot of ' + project.name" :src="project.image"
+                            <img :alt="'Screenshot of ' + project.name" :src="'/storage/' + project.image"
                                  class="absolute top-0 right-0 w-full h-full"/>
                         </a>
                         <div
@@ -47,50 +47,15 @@
 <script>
 export default {
     metaInfo: {title: 'Projects'},
+    props: {
+        projects: Array,
+    },
     data() {
         return {
-            projects: [
-                {
-                    name: 'Browser.is',
-                    web_link: 'https://browser.is',
-                    github_link: 'https://github.com/captenmasin/browser.is',
-                    image: '../../img/projects/browser_is.png',
-                    description: 'A small application for grabbing the current browser/device/location information. Great for debugging issues clients have raised',
-                    live: true
-                },
-                {
-                    name: 'Skipr',
-                    github_link: 'https://github.com/captenmasin/YT-Intro-Skipper',
-                    description: 'Easily auto-skip YouTube intros depending on the channel or the title',
-                    live: false
-                },
-                {
-                    name: 'MyBoard',
-                    live: false,
-                    description: 'An easy way to manage a set of links/images/videos in public or shared boards'
-                },
-                {
-                    name: 'LifeLogr',
-                    live: false,
-                    description: 'A more personal social website, keep track of your days and how you\'re feeling'
-                },
-                {
-                    name: 'Novogamer',
-                    live: false,
-                    description: 'A gaming news platform with a focus on real user reviews'
-                },
-                {
-                    name: 'Nucleon',
-                    live: false,
-                    description: 'An easy to use, customizable, Laravel-based CMS'
-                }
-            ]
+
         }
     },
     mounted() {
-        this.$Lazyload.$on('error', function ({ bindType, el, naturalHeight, naturalWidth, $parent, src, loading, error }, formCache) {
-            console.log(el, src)
-        })
     }
 }
 </script>
