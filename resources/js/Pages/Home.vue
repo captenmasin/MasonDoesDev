@@ -13,9 +13,9 @@
         </div>
         <div class="w-full md:w-8/12 relative">
             <div class="aspect-ratio-square"></div>
-            <div
-                class="absolute top-5 left-5 md:top-10 md:left-10 w-full h-full object-cover bg-blue-900 opacity-50"></div>
-            <img v-lazy="'../../img/lou-and-mas.jpg'" class="absolute top-0 right-0 w-full h-full object-cover"/>
+            <div class="absolute top-5 left-5 md:top-10 md:left-10 w-full h-full object-cover bg-blue-900 opacity-50"></div>
+            <img v-lazy="'../../img/lou-and-mas.jpg'" class="absolute top-0 right-0 w-full h-full object-cover main-image--glitch"/>
+            <img v-lazy="'../../img/lou-and-mas.jpg'" class="absolute top-0 right-0 w-full h-full object-cover main-image"/>
             <div class="absolute top-0 right-0 w-full h-full object-cover bg-red-600 blend-darken"></div>
         </div>
     </div>
