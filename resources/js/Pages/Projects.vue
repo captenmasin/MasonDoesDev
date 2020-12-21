@@ -6,7 +6,7 @@
         <div class="flex flex-wrap -mx-2 pb-10 space-y-4 md:space-y-0">
             <div v-for="project in projects" class="flex w-full md:w-4/12 xl:w-3/12 mb-4 px-2">
                 <div class="flex flex-col w-full text-white">
-                    <div class="w-full aspect-ratio-16/9 relative mb-2">
+                    <div class="w-full aspect-ratio-16/9 relative mb-2 border-4 border-yellow-300">
                         <a :href="project.web_link" class="absolute top-0 right-0 w-full h-full" v-if="project.image"
                            target="_blank">
                             <img :alt="'Screenshot of ' + project.name" :src="'/storage/' + project.image"
