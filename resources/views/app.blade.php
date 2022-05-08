@@ -9,7 +9,8 @@
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="{{ config('app.name') }}"/>
     <meta property="og:description" content="A random guy who makes things"/>
-    <meta property="og:image" content="{{ config('app.url') }}/img/lou-and-mas.jpg"/>
+    <meta property="og:image" content="{{ config('app.url') }}/img/main-image.jpeg"/>
+    <script defer data-domain="masondoes.dev" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body class="bg-green-800">
 @inertia

@@ -11,7 +11,8 @@ Route::get('/', function () {
 });
 
 Route::get('/projects', function () {
-    $projects = Project::all();
+    $projects = Project::where('hidden', false)->get();
+    dd($projects);
     return Inertia::render('Projects', [
         'projects' => $projects
     ]);
