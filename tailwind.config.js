@@ -1,31 +1,19 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-    purge: [
-        './resources/js/**/*.vue',
-        './resources/views/**/*.blade.php',
-    ],
-    darkMode: false,
-    theme: {
-        aspectRatio: {
-            'none': 0,
-            'square': [1, 1],
-            '16/9': [16, 9],
-            '4/3': [4, 3],
-            '21/9': [21, 9],
-        },
-        extend: {
-            fontFamily: {
-                heading: ["Widebody Sans", "sans-serif"],
-            }
-        },
+	content: ["./*.php"],
+  theme: {
+    extend: {
+		fontFamily: {
+			heading: ['Instrument Serif', 'serif'],
+			body: ['Inter', 'sans-serif'],
+		},
+	    colors: {
+			primary: {
+				DEFAULT: '#3300FF',
+			}
+	    }
     },
-    variants: {
-        extend: {},
-    },
-    plugins: [
-        require('tailwindcss-aspect-ratio'),
-    ],
-    corePlugins: {
-        // ...
-        container: false,
-    }
+  },
+  plugins: [],
 }
+
