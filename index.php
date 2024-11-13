@@ -22,6 +22,8 @@ $websites = [
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
 
+    <script defer src="https://api.pirsch.io/pa.js" id="pianjs" data-code="eS7tDC6VGNOnoaRSEiR8RsgGFgHpfvkk"></script>
+
     <meta name="description" content="<?= $description ?>">
     <meta property="og:title" content="masondoes.dev">
     <meta property="og:url" content="https://masondoes.dev">
