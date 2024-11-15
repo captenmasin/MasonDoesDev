@@ -63,11 +63,14 @@ $websites = [
 
 <body class="h-full flex flex-1 bg-gradient-to-b from-[#FAFAF9] to-[#E7E5E4]">
 <div class="flex flex-col gap-1 items-center justify-center w-full h-full">
-    <h1 class="font-heading leading-0 -mt-8 text-primary text-9xl">
+    <h1 class="font-heading leading-0 -mt-8 text-primary text-5xl">
         how to contact me
     </h1>
-    <h2 class="font-heading text-5xl">
+    <h2 class="font-heading text-4xl font-bold">
         don't
+    </h2>
+    <h2 class="font-heading text-xl mt-4">
+        thanks
     </h2>
 </div>
 </body>
