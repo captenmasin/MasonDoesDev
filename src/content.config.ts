@@ -13,14 +13,4 @@ const projects = defineCollection({
     }),
 });
 
-const tools = defineCollection({
-    loader: glob({ base: './src/content/tools', pattern: '**/*.{md,mdx}' }),
-    schema: z.object({
-        name: z.string(),
-        url: z.string(),
-        status: z.enum(['live', 'wip']),
-        order: z.number(),
-    }),
-});
-
-export const collections = { projects, tools };
+export const collections = { projects };

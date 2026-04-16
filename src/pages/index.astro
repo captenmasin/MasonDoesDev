@@ -6,39 +6,6 @@ import MasonImage from '../assets/mason.png'
 import MasonWaveImage from '../assets/mason-wave.png'
 import {getCollection, render} from "astro:content";
 
-// const projects = [
-//     {
-//         name: 'Novogamer',
-//         url: 'https://novogamer.com',
-//         status: 'Live',
-//         desc: 'Community gaming platform for articles, reviews, and guides. Built on Laravel, Inertia.js, Vue, and TypeScript with AI-driven content discovery, vector embeddings, and queue-based architecture.',
-//     },
-//     {
-//         name: 'Bookbound',
-//         url: 'https://bookbound.app',
-//         status: 'Live',
-//         desc: 'Personal library and book tracking platform. Users catalogue books via API or manually, write reviews, add notes, and organise their collection with a focus on clean UX.',
-//     },
-//     {
-//         name: 'SEO Toolkit',
-//         url: 'https://seotoolkit.dev',
-//         status: 'Live',
-//         desc: 'Lightweight, modular SEO tools for developers and marketers. Fast, practical utilities built for everyday workflows with emphasis on performance and simplicity.',
-//     },
-//     {
-//         name: 'SEO Toolkit 2',
-//         url: null,
-//         status: 'In development',
-//         desc: 'Full site monitoring and SEO auditing SaaS. Monitors uptime, SSL, broken links, DNS, and performance across multiple sites — real-time dashboard, alerting, and team support.',
-//     },
-//     {
-//         name: 'Browser.is',
-//         url: 'https://browser.is',
-//         status: 'Live',
-//         desc: 'Platform for small, fast web utility tools. Built as a foundation for rapidly developing and deploying single-purpose tools.',
-//     },
-// ];
-
 const skillGroups = [
     { label: 'Backend', items: ['Laravel', 'PHP (modern OOP)', 'MySQL / PostgreSQL', 'Redis, queues, Horizon'] },
     { label: 'Frontend', items: ['Vue 3 + TypeScript', 'Inertia.js', 'TailwindCSS', 'Component-driven UI'] },
@@ -54,15 +21,18 @@ const projects = await Promise.all(
         Content: (await render(entry)).Content,
     }))
 );
+
+const tools = [
+    { name: 'Tool name', url: 'https://example.com', desc: 'Short description.' },
+];
 ---
 
 <Layout title="Mason Day">
     <div class="bg-canvas text-ink min-h-screen">
         <div class="max-w-2xl mx-auto px-8 py-20 md:py-32">
-
-            <!-- Header -->
-            <header class="mb-20">
-                <div class="group relative mb-8 w-22 h-22">
+            <header class="mb-10 md:mb-20">
+                <div class:list={'flex items-center md:items-start mb-6 gap-4 md:gap-8 md:flex-col'}>
+                <div class="group shrink-0 relative size-12 md:size-22">
                     <Image
                         src={MasonImage}
                         alt="Mason Day"
@@ -80,7 +50,8 @@ const projects = await Promise.all(
                         class="absolute inset-0 w-full h-full rounded-full object-cover opacity-0 group-hover:opacity-100"
                     />
                 </div>
-                <h1 class="font-serif text-6xl md:text-8xl leading-none tracking-tight mb-6">Mason Day</h1>
+                <h1 class="font-serif text-3xl md:text-8xl leading-none tracking-tight">Mason Day</h1>
+                </div>
                 <p class="text-muted text-lg leading-relaxed">
                     Senior full-stack developer with nearly a decade of commercial experience.
                 </p>
@@ -92,9 +63,9 @@ const projects = await Promise.all(
                 </div>
             </header>
 
-            <hr class="border-rule mb-20" />
+            <hr class="border-rule mb-10 md:mb-20" />
 
-            <section class="mb-20">
+            <section class="mb-10 md:mb-20">
                 <h2 class="font-serif text-3xl mb-12">Projects</h2>
                 <div class="space-y-12">
                     {projects.map(project => (
@@ -112,9 +83,23 @@ const projects = await Promise.all(
                 </div>
             </section>
 
-            <hr class="border-rule mb-20" />
+            <hr class="border-rule mb-10 md:mb-20" />
 
-            <section class="mb-20">
+            <section class="mb-10 md:mb-20">
+                <h2 class="font-serif text-3xl mb-12">My Tools</h2>
+                <ul class="space-y-4">
+                    {tools.map(tool => (
+                        <li>
+                            <a href={tool.url} target="_blank" class="font-serif text-xl link-line">{tool.name}</a>
+                            <p class="text-muted text-sm leading-relaxed mt-1">{tool.desc}</p>
+                        </li>
+                    ))}
+                </ul>
+            </section>
+
+            <hr class="border-rule mb-10 md:mb-20" />
+
+            <section class="mb-10 md:mb-20">
                 <h2 class="font-serif text-3xl mb-12">Skills</h2>
                 <div class="grid grid-cols-2 gap-x-12 gap-y-10">
                     {skillGroups.map(group => (
