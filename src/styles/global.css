@@ -1,1 +1,46 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
+
+    --color-canvas: #FAFAF8;
+    --color-ink: #1a1a1a;
+    --color-subtle: #555555;
+    --color-muted: #666666;
+    --color-faint: #999999;
+    --color-placeholder: #aaaaaa;
+    --color-ghost: #bbbbbb;
+    --color-rule: #e8e8e4;
+}
+
+@layer base {
+    html.dark {
+        --color-canvas: #111111;
+        --color-ink: #f2f2ef;
+        --color-subtle: #c4c4c0;
+        --color-muted: #a8a8a4;
+        --color-faint: #7a7a76;
+        --color-placeholder: #6a6a66;
+        --color-ghost: #555553;
+        --color-rule: #2a2a28;
+    }
+
+    body {
+        font-family: var(--font-sans), serif;
+    }
+}
+
+@utility link-line {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease;
+
+    &:hover {
+        background-size: 100% 1px;
+    }
+}
