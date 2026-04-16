@@ -4,39 +4,40 @@ import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import MasonImage from '../assets/mason.png'
 import MasonWaveImage from '../assets/mason-wave.png'
+import {getCollection, render} from "astro:content";
 
-const projects = [
-    {
-        name: 'Novogamer',
-        url: 'https://novogamer.com',
-        status: 'Live',
-        desc: 'Community gaming platform for articles, reviews, and guides. Built on Laravel, Inertia.js, Vue, and TypeScript with AI-driven content discovery, vector embeddings, and queue-based architecture.',
-    },
-    {
-        name: 'Bookbound',
-        url: 'https://bookbound.app',
-        status: 'Live',
-        desc: 'Personal library and book tracking platform. Users catalogue books via API or manually, write reviews, add notes, and organise their collection with a focus on clean UX.',
-    },
-    {
-        name: 'SEO Toolkit',
-        url: 'https://seotoolkit.dev',
-        status: 'Live',
-        desc: 'Lightweight, modular SEO tools for developers and marketers. Fast, practical utilities built for everyday workflows with emphasis on performance and simplicity.',
-    },
-    {
-        name: 'SEO Toolkit 2',
-        url: null,
-        status: 'In development',
-        desc: 'Full site monitoring and SEO auditing SaaS. Monitors uptime, SSL, broken links, DNS, and performance across multiple sites — real-time dashboard, alerting, and team support.',
-    },
-    {
-        name: 'Browser.is',
-        url: 'https://browser.is',
-        status: 'Live',
-        desc: 'Platform for small, fast web utility tools. Built as a foundation for rapidly developing and deploying single-purpose tools.',
-    },
-];
+// const projects = [
+//     {
+//         name: 'Novogamer',
+//         url: 'https://novogamer.com',
+//         status: 'Live',
+//         desc: 'Community gaming platform for articles, reviews, and guides. Built on Laravel, Inertia.js, Vue, and TypeScript with AI-driven content discovery, vector embeddings, and queue-based architecture.',
+//     },
+//     {
+//         name: 'Bookbound',
+//         url: 'https://bookbound.app',
+//         status: 'Live',
+//         desc: 'Personal library and book tracking platform. Users catalogue books via API or manually, write reviews, add notes, and organise their collection with a focus on clean UX.',
+//     },
+//     {
+//         name: 'SEO Toolkit',
+//         url: 'https://seotoolkit.dev',
+//         status: 'Live',
+//         desc: 'Lightweight, modular SEO tools for developers and marketers. Fast, practical utilities built for everyday workflows with emphasis on performance and simplicity.',
+//     },
+//     {
+//         name: 'SEO Toolkit 2',
+//         url: null,
+//         status: 'In development',
+//         desc: 'Full site monitoring and SEO auditing SaaS. Monitors uptime, SSL, broken links, DNS, and performance across multiple sites — real-time dashboard, alerting, and team support.',
+//     },
+//     {
+//         name: 'Browser.is',
+//         url: 'https://browser.is',
+//         status: 'Live',
+//         desc: 'Platform for small, fast web utility tools. Built as a foundation for rapidly developing and deploying single-purpose tools.',
+//     },
+// ];
 
 const skillGroups = [
     { label: 'Backend', items: ['Laravel', 'PHP (modern OOP)', 'MySQL / PostgreSQL', 'Redis, queues, Horizon'] },
@@ -44,6 +45,15 @@ const skillGroups = [
     { label: 'CMS', items: ['WordPress', 'Custom themes & plugins', 'ACF', 'Headless CMS'] },
     { label: 'Infrastructure', items: ['Linux (Ubuntu)', 'Apache / Nginx', 'Git, Vite, CI/CD', 'Server management'] },
 ];
+
+const projectEntries = (await getCollection('projects'))
+    .sort((a, b) => a.data.order - b.data.order);
+const projects = await Promise.all(
+    projectEntries.map(async (entry) => ({
+        ...entry,
+        Content: (await render(entry)).Content,
+    }))
+);
 ---
 
 <Layout title="Mason Day">
@@ -72,7 +82,7 @@ const skillGroups = [
                 </div>
                 <h1 class="font-serif text-6xl md:text-8xl leading-none tracking-tight mb-6">Mason Day</h1>
                 <p class="text-muted text-lg leading-relaxed">
-                    Senior full-stack developer with nearly a decade of commercial experience. I build scalable web applications using Laravel, Vue&nbsp;3, and TypeScript.
+                    Senior full-stack developer with nearly a decade of commercial experience.
                 </p>
                 <div class="flex flex-wrap gap-x-6 gap-y-2 mt-8">
                     <a href="https://github.com/captenmasin" target="_blank" class="text-sm text-faint link-line">GitHub</a>
@@ -87,16 +97,16 @@ const skillGroups = [
             <section class="mb-20">
                 <h2 class="font-serif text-3xl mb-12">Projects</h2>
                 <div class="space-y-12">
-                    {projects.map(p => (
+                    {projects.map(project => (
                         <div>
                             <div class="flex items-baseline gap-4 mb-2">
-                                {p.url
-                                    ? <a href={p.url} target="_blank" class="font-serif text-xl link-line">{p.name}</a>
-                                    : <span class="font-serif text-xl text-placeholder">{p.name}</span>
+                                {project.data.url
+                                    ? <a href={project.data.url} target="_blank" class="font-serif text-xl link-line">{project.data.name}</a>
+                                    : <span class="font-serif text-xl text-placeholder">{project.data.name}</span>
                                 }
-                                <span class="text-xs text-ghost uppercase tracking-widest">{p.status}</span>
+                                <span class="text-xs text-ghost uppercase tracking-widest">{project.data.status}</span>
                             </div>
-                            <p class="text-muted text-sm leading-relaxed">{p.desc}</p>
+                            <div class="text-muted text-sm leading-relaxed"><project.Content /></div>
                         </div>
                     ))}
                 </div>
