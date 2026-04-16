@@ -1,0 +1,45 @@
+---
+import '../styles/global.css';
+
+interface Props {
+    title?: string;
+    description?: string;
+}
+
+const { title = 'Mason Day', description = 'Senior full-stack developer specialising in Laravel, Vue, and TypeScript.' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="generator" content={Astro.generator} />
+        <meta name="description" content={description} />
+        <meta property="og:title" content={title} />
+        <meta property="og:url" content="https://masondoes.dev" />
+        <meta property="og:description" content={description} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@capten_masin" />
+        <meta name="theme-color" content="#111111" />
+        <title>{title}</title>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Mason Day",
+                "jobTitle": "Senior Web Developer",
+                "url": "https://masondoes.dev",
+                "sameAs": [
+                    "https://x.com/capten_masin",
+                    "https://github.com/captenmasin"
+                ]
+            }
+        </script>
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>

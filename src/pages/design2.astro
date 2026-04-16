@@ -1,0 +1,117 @@
+---
+// Design 2: Refined Minimal — Editorial serif, generous whitespace, understated
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Mason Day">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .serif { font-family: 'Instrument Serif', serif; }
+        .link-line {
+            background-image: linear-gradient(currentColor, currentColor);
+            background-size: 0 1px;
+            background-position: 0 100%;
+            background-repeat: no-repeat;
+            transition: background-size 0.3s ease;
+        }
+        .link-line:hover { background-size: 100% 1px; }
+    </style>
+
+    <div class="bg-[#FAFAF8] text-[#1a1a1a] min-h-screen">
+        <div class="max-w-2xl mx-auto px-8 py-20 md:py-32">
+
+            <!-- Header -->
+            <header class="mb-20">
+                <h1 class="serif text-6xl md:text-8xl leading-none tracking-tight mb-6">Mason Day</h1>
+                <p class="text-[#666] text-lg leading-relaxed">
+                    Senior full-stack developer with nearly a decade of commercial experience. I build scalable web applications using Laravel, Vue&nbsp;3, and TypeScript — from CMS platforms to SaaS products.
+                </p>
+                <div class="flex flex-wrap gap-x-6 gap-y-2 mt-8">
+                    <a href="mailto:daymason@hotmail.co.uk" class="text-sm text-[#999] link-line">daymason@hotmail.co.uk</a>
+                    <a href="https://github.com/captenmasin" target="_blank" class="text-sm text-[#999] link-line">GitHub</a>
+                    <a href="https://x.com/capten_masin" target="_blank" class="text-sm text-[#999] link-line">Twitter</a>
+                </div>
+            </header>
+
+            <hr class="border-[#e8e8e4] mb-20" />
+
+            <!-- Projects -->
+            <section class="mb-20">
+                <h2 class="serif text-3xl mb-12">Projects</h2>
+                <div class="space-y-12">
+                    {[
+                        { name: 'Novogamer', url: 'https://novogamer.com', status: 'Live', desc: 'Community gaming platform for articles, reviews, and guides. Built on Laravel, Inertia.js, Vue, and TypeScript with AI-driven content discovery, vector embeddings, and queue-based architecture.' },
+                        { name: 'Bookbound', url: 'https://bookbound.app', status: 'Live', desc: 'Personal library and book tracking platform. Users catalogue books via API or manually, write reviews, add notes, and organise their collection with a focus on clean UX.' },
+                        { name: 'SEO Toolkit', url: 'https://seotoolkit.dev', status: 'Live', desc: 'Lightweight, modular SEO tools for developers and marketers. Fast, practical utilities built for everyday workflows with emphasis on performance and simplicity.' },
+                        { name: 'SEO Toolkit 2', url: null, status: 'In development', desc: 'Full site monitoring and SEO auditing SaaS. Monitors uptime, SSL, broken links, DNS, and performance across multiple sites — real-time dashboard, alerting, and team support.' },
+                        { name: 'Browser.is', url: 'https://browser.is', status: 'Live', desc: 'Platform for small, fast web utility tools. Built as a foundation for rapidly developing and deploying single-purpose tools.' },
+                    ].map(p => (
+                        <div>
+                            <div class="flex items-baseline gap-4 mb-2">
+                                {p.url
+                                    ? <a href={p.url} target="_blank" class="serif text-xl link-line">{p.name}</a>
+                                    : <span class="serif text-xl text-[#aaa]">{p.name}</span>
+                                }
+                                <span class="text-xs text-[#bbb] uppercase tracking-widest">{p.status}</span>
+                            </div>
+                            <p class="text-[#666] text-sm leading-relaxed">{p.desc}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            <hr class="border-[#e8e8e4] mb-20" />
+
+            <!-- Experience -->
+            <section class="mb-20">
+                <h2 class="serif text-3xl mb-12">Experience</h2>
+                <div class="space-y-12">
+                    <div class="grid grid-cols-[110px_1fr] gap-6">
+                        <div class="text-xs text-[#bbb] pt-0.5 leading-relaxed">2016<br />— Present</div>
+                        <div>
+                            <div class="font-medium mb-1">Speed.agency</div>
+                            <div class="text-sm text-[#999] mb-3">Web Developer</div>
+                            <p class="text-sm text-[#666] leading-relaxed">Delivered and maintained 50+ client projects across WordPress and Laravel. Led end-to-end development — architecture, UI/UX, performance, deployment. Built modern Laravel + Vue + Inertia.js stacks and managed ongoing support.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-[110px_1fr] gap-6">
+                        <div class="text-xs text-[#bbb] pt-0.5">2015–2016</div>
+                        <div>
+                            <div class="font-medium mb-1 text-[#999]">StyleSeating</div>
+                            <div class="text-sm text-[#bbb] mb-3">IT Support Apprentice</div>
+                            <p class="text-sm text-[#bbb] leading-relaxed">Website maintenance, social media management, email marketing.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="border-[#e8e8e4] mb-20" />
+
+            <!-- Skills -->
+            <section class="mb-20">
+                <h2 class="serif text-3xl mb-12">Skills</h2>
+                <div class="grid grid-cols-2 gap-x-12 gap-y-10">
+                    {[
+                        { label: 'Backend', items: ['Laravel', 'PHP (modern OOP)', 'MySQL / PostgreSQL', 'Redis, queues, Horizon'] },
+                        { label: 'Frontend', items: ['Vue 3 + TypeScript', 'Inertia.js', 'TailwindCSS', 'Component-driven UI'] },
+                        { label: 'CMS', items: ['WordPress', 'Custom themes & plugins', 'ACF', 'Headless CMS'] },
+                        { label: 'Infrastructure', items: ['Linux (Ubuntu)', 'Apache / Nginx', 'Git, Vite, CI/CD', 'Server management'] },
+                    ].map(group => (
+                        <div>
+                            <div class="text-xs text-[#bbb] uppercase tracking-widest mb-4">{group.label}</div>
+                            <ul class="space-y-1.5 text-sm text-[#555]">
+                                {group.items.map(item => <li>{item}</li>)}
+                            </ul>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            <footer class="text-center">
+                <p class="serif italic text-[#bbb] text-lg">masondoes.dev</p>
+            </footer>
+
+        </div>
+    </div>
+</Layout>
