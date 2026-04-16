@@ -1,4 +1,6 @@
 .idea/
 .claude/
-dist
 .ploi
+node_modules/
+.astro/
+dist/
