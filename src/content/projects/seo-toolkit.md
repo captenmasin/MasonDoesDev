@@ -1,6 +1,8 @@
 ---
 name: 'SEO Toolkit'
-url: 'https://seotoolkit.dev'
+links:
+  - label: 'Web'
+    url: 'https://seotoolkit.dev'
 status: 'live'
 order: 3
 ---

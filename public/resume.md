@@ -90,7 +90,7 @@ Wisbech | 2015 - 2016
 ### Novogamer
 https://novogamer.com
 
-A community-driven platform where gamers can write, discover, and share articles, reviews, and insights about video games. Features semantic search across content using vector embeddings, AI-assisted content discovery to surface related articles and recommendations, and an AI-driven trending topics fetcher that surfaces what the gaming world is talking about in real time.
+A community-driven platform where gamers can write, discover, and share articles, reviews, and insights about video games. Features semantic search across content using vector embeddings, AI-assisted content discovery to surface related articles and recommendations, and an AI-driven trending topics fetcher that surfaces what the gaming world is talking about in real time. Also released as a Trusted Web Activity (TWA) Android app built on top of the main web experience.
 
 **Tech:** Laravel, Inertia.js, Vue 3, TypeScript, TailwindCSS, Redis, pgvector, AI/LLM integration
 
@@ -99,7 +99,7 @@ A community-driven platform where gamers can write, discover, and share articles
 ### Bookbound
 https://bookbound.app
 
-Personal library and book tracking platform. Users catalogue books via barcode or manually, write reviews, add notes, and organise their collection with a focus on clean UX. Designed around a fast, mobile-friendly reading log workflow.
+Personal library and book tracking platform. Users catalogue books via barcode or manually, write reviews, add notes, and organise their collection with a focus on clean UX. Designed around a fast, mobile-friendly reading log workflow. Also released as a Trusted Web Activity (TWA) Android app built on top of the main web experience.
 
 **Tech:** Laravel, Inertia.js, Vue 3, TypeScript, TailwindCSS
 

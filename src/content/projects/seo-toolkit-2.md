@@ -1,6 +1,6 @@
 ---
 name: 'SEO Toolkit 2'
-url: ''
+links: []
 status: 'wip'
 order: 4
 ---

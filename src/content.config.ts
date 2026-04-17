@@ -7,7 +7,10 @@ const projects = defineCollection({
     loader: glob({ base: './src/content/projects', pattern: '**/*.{md,mdx}' }),
     schema: z.object({
         name: z.string(),
-        url: z.string(),
+        links: z.array(z.object({
+            label: z.string(),
+            url: z.string(),
+        })).default([]),
         status: z.enum(['live', 'wip']),
         order: z.number(),
     }),

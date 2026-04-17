@@ -1,6 +1,8 @@
 ---
 name: 'Browser.is'
-url: 'https://browser.is'
+links:
+  - label: 'Web'
+    url: 'https://browser.is'
 status: 'live'
 order: 5
 ---
