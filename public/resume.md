@@ -1,5 +1,5 @@
 # Mason Day
-Senior Web Developer / Full-Stack Engineer
+Senior Developer / Full-Stack Engineer
 
 3 Station Road, Parson Drove, Wisbech, PE13 4HA  
 07899901501  
@@ -10,9 +10,9 @@ https://masondoes.dev
 
 ## Professional Summary
 
-Product-focused full-stack developer with nearly a decade of commercial experience, specialising in Laravel, Vue, and WordPress. Since 2016, I've delivered and maintained 50+ client projects while also building and shipping independent products.
+Full-stack developer working primarily with Laravel, Vue, and WordPress. Building professionally since 2016, with over 50 client projects delivered alongside independently built and launched products.
 
-I focus on building scalable, user-driven applications - from custom CMS platforms and APIs to full SaaS-style platforms. Comfortable owning projects end-to-end, including architecture, UI/UX, performance, and deployment.
+Focused on building scalable, user-driven applications - from custom CMS platforms and APIs to full SaaS-style platforms. Comfortable owning projects end-to-end, including architecture, UI/UX, performance, and deployment.
 
 ---
 
@@ -43,17 +43,36 @@ I focus on building scalable, user-driven applications - from custom CMS platfor
 
 ## Experience
 
-### Speed.agency - Web Developer
+### Speed.agency - Senior Developer
 United Kingdom | 2016 - Present
 
-- Delivered and maintained 50+ WordPress projects across multiple industries
-- Built and deployed Laravel applications for production use
-- Led both frontend and backend development across client projects
-- Developed custom WordPress themes and plugins tailored to client requirements
-- Built modern Laravel + Vue applications using Inertia.js
-- Improved performance and refactored legacy systems
-- Collaborated with designers, marketers, and stakeholders to deliver full digital solutions
-- Managed ongoing support, feature development, and technical problem-solving
+Speed.agency is a UK digital agency delivering web platforms for fintech, medtech, and insurance clients. Progressed from junior developer to lead over the course of 10 years across key accounts including HSBC Life, BGL, and Compare The Market, working on everything from marketing sites and campaign microsites to long-running platforms with complex integrations and strict compliance requirements. Trusted to take ownership of flagship client work, drive technical direction across projects, and act as a steady point of contact for stakeholders when delivery pressure is high.
+
+#### Full Development Cycle
+- Owned projects end-to-end from architecture through deployment
+- Built and shipped production Laravel and WordPress applications
+- Deployed and managed infrastructure across AWS, DigitalOcean, and WP Engine
+- Built modern WordPress, Laravel + Vue applications
+
+#### Cross-Functional Collaboration
+- Worked closely with designers to translate UX into performant interfaces
+- Partnered with marketers, project managers, and stakeholders on requirements
+- Delivered full digital solutions aligned with commercial goals
+
+#### Critical Debugging & Incident Response
+- Diagnosed and resolved production issues under pressure
+- Refactored legacy systems and improved performance across inherited codebases
+- Managed active security incidents including live hacking situations
+
+#### Hosting & Maintenance
+- Managed Ubuntu servers with Apache/Nginx across multiple client environments
+- Maintained ongoing support, monitoring, and feature development
+- Handled deployments, backups, and server-level troubleshooting
+
+#### Leadership & Soft Skills
+- Acted as lead developer on key accounts
+- Defined and maintained development standards across the team
+- Ran code reviews and mentored junior developers
 
 ---
 
@@ -66,21 +85,21 @@ Wisbech | 2015 - 2016
 
 ---
 
-## Projects
+## Personal Projects
 
 ### Novogamer
 https://novogamer.com
 
-A community-driven platform where gamers can write, discover, and share articles, reviews, and insights about video games.
+A community-driven platform where gamers can write, discover, and share articles, reviews, and insights about video games. Features semantic search across content using vector embeddings, AI-assisted content discovery to surface related articles and recommendations, and an AI-driven trending topics fetcher that surfaces what the gaming world is talking about in real time.
 
-**Tech:** Laravel, Inertia.js, Vue 3, TypeScript, TailwindCSS, Redis, pgvector
+**Tech:** Laravel, Inertia.js, Vue 3, TypeScript, TailwindCSS, Redis, pgvector, AI/LLM integration
 
 ---
 
 ### Bookbound
 https://bookbound.app
 
-Personal library and book tracking platform. Users catalogue books via barcode or manually, write reviews, add notes, and organise their collection with a focus on clean UX.
+Personal library and book tracking platform. Users catalogue books via barcode or manually, write reviews, add notes, and organise their collection with a focus on clean UX. Designed around a fast, mobile-friendly reading log workflow.
 
 **Tech:** Laravel, Inertia.js, Vue 3, TypeScript, TailwindCSS
 
@@ -89,7 +108,7 @@ Personal library and book tracking platform. Users catalogue books via barcode o
 ### SEO Toolkit
 https://seotoolkit.dev
 
-Lightweight SEO tools for developers and marketers to quickly test and improve their web applications including Sharing Previews, Lighthouse Scores, DNS Info, and more.
+Lightweight SEO tools for developers and marketers to quickly test and improve their web applications including Sharing Previews, Lighthouse Scores, DNS Info, and more. Built to give devs a single place to sanity-check a deploy before it goes live.
 
 **Tech:** Laravel, Inertia.js, Vue 3, TypeScript, TailwindCSS
 
@@ -97,7 +116,7 @@ Lightweight SEO tools for developers and marketers to quickly test and improve t
 
 ### SEO Toolkit 2 (Unreleased)
 
-Full site monitoring and SEO auditing SaaS. Monitors uptime, SSL, broken links, DNS, and performance across multiple sites with real-time dashboard, alerting, and team support.
+Full site monitoring and SEO auditing SaaS. Monitors uptime, SSL, broken links, DNS, and performance across multiple sites with real-time dashboard, alerting, and team support. Architected around queue workers and live broadcasting for continuous site health visibility.
 
 **Tech:** Laravel, Inertia.js, Vue 3, TypeScript, TailwindCSS, Redis, Laravel Horizon, Laravel Reverb
 
@@ -106,7 +125,7 @@ Full site monitoring and SEO auditing SaaS. Monitors uptime, SSL, broken links, 
 ### Browser.is
 https://browser.is
 
-A small, helpful tool that shows exactly what information your browser reveals (like fingerprints, IP, and settings). Built with client debugging in mind.
+A small, helpful tool that shows exactly what information a browser reveals (like fingerprints, IP, and settings). Built with client debugging in mind, useful for reproducing environment-specific bugs during support.
 
 **Tech:** Laravel, Blade, TailwindCSS
 
@@ -123,18 +142,21 @@ A small, helpful tool that shows exactly what information your browser reveals (
 
 ---
 
-## Education
+## AI-Augmented Development
 
-Thomas Clarkson Academy, Wisbech  
-2009 - 2014
-
-- IT - A
-- English - C
-- Maths - C
-- Science - C
+Use Claude and ChatGPT as daily tools to accelerate delivery without compromising code quality. Apply them for scaffolding, refactoring, exploring unfamiliar APIs, reviewing diffs, and rubber-ducking architectural decisions - while keeping ownership of the final design, security posture, and production code. Comfortable integrating LLMs into products as well as using them in the development workflow.
 
 ---
 
-## References
+## Self Learned
 
-Available on request
+Self-taught developer since the age of 14. Built a foundation in HTML, CSS, PHP, and JavaScript through personal projects long before entering the industry, and have continued to learn independently across backend, frontend, DevOps, and AI tooling throughout my career.
+
+---
+
+## Education
+
+Thomas Clarkson Academy, Wisbech
+
+- IT - A
+- A-C including Maths
