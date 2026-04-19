@@ -23,7 +23,16 @@ const projects = await Promise.all(
 );
 
 const tools = [
-    { name: 'Tool name', url: 'https://example.com', desc: 'Short description.' },
+    { name: 'PHPStorm', url: 'https://www.jetbrains.com/phpstorm/', desc: 'Primary IDE for day-to-day development, debugging, and larger codebase work.' },
+    { name: 'Zed', url: 'https://zed.dev/', desc: 'Lightweight editor for quick changes, notes, and smaller edits without full IDE overhead.' },
+    { name: 'TablePlus', url: 'https://tableplus.com/', desc: 'Database client for inspecting schemas, running queries, and managing local and remote databases.' },
+    { name: 'Laravel Herd', url: 'https://herd.laravel.com/', desc: 'Local PHP development environment for running Laravel projects quickly and consistently.' },
+    { name: 'Warp + Oh My Zsh', url: 'https://www.warp.dev/', desc: 'Terminal setup for everyday command line work, with a shell environment tuned for speed and convenience.' },
+    { name: 'Ploi', url: 'https://ploi.io/', desc: 'Server provisioning and deployment platform for managing production infrastructure.' },
+    { name: 'Hetzner', url: 'https://www.hetzner.com/', desc: 'Preferred hosting provider for the servers I deploy and manage.' },
+    { name: 'OpenAI Codex', url: 'https://openai.com/codex/', desc: 'Used for AI-assisted development, refactoring, debugging, and accelerating delivery.' },
+    { name: 'GitHub', url: 'https://github.com/', desc: 'Version control, collaboration, and the main home for repositories and code review.' },
+    { name: 'Cloudflare', url: 'https://www.cloudflare.com/', desc: 'DNS, domain management, and edge-level tooling for performance and protection.' },
 ];
 ---
 
@@ -103,20 +112,6 @@ const tools = [
             <hr class="border-rule mb-10 md:mb-20" />
 
             <section class="mb-10 md:mb-20">
-                <h2 class="font-serif text-3xl mb-12">My Tools</h2>
-                <ul class="space-y-4">
-                    {tools.map(tool => (
-                        <li>
-                            <a href={tool.url} target="_blank" class="font-serif text-xl link-line">{tool.name}</a>
-                            <p class="text-muted text-sm leading-relaxed mt-1">{tool.desc}</p>
-                        </li>
-                    ))}
-                </ul>
-            </section>
-
-            <hr class="border-rule mb-10 md:mb-20" />
-
-            <section class="mb-10 md:mb-20">
                 <h2 class="font-serif text-3xl mb-12">Skills</h2>
                 <div class="grid grid-cols-2 gap-x-12 gap-y-10">
                     {skillGroups.map(group => (
@@ -128,6 +123,20 @@ const tools = [
                         </div>
                     ))}
                 </div>
+            </section>
+
+            <hr class="border-rule mb-10 md:mb-20" />
+
+            <section class="mb-10 md:mb-20">
+                <h2 class="font-serif text-3xl mb-12">My Tools</h2>
+                <ul class="grid grid-cols-2 gap-x-8 gap-y-4">
+                    {tools.map(tool => (
+                        <li>
+                            <a href={tool.url} target="_blank" class="font-serif text-base link-line">{tool.name}</a>
+                            <p class="text-muted text-xs leading-relaxed mt-1">{tool.desc}</p>
+                        </li>
+                    ))}
+                </ul>
             </section>
 
             <footer class="text-center">

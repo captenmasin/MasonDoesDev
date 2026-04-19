@@ -1,18 +1,15 @@
 # Mason Day
 Senior Developer / Full-Stack Engineer
 
-3 Station Road, Parson Drove, Wisbech, PE13 4HA  
 07899901501  
-mason@spacemancodes.com
+mason@spacemancodes.com  
 https://masondoes.dev
 
 ---
 
-## Professional Summary
+## Overview
 
-Full-stack developer working primarily with Laravel, Vue, and WordPress. Building professionally since 2016, with over 50 client projects delivered alongside independently built and launched products.
-
-Focused on building scalable, user-driven applications - from custom CMS platforms and APIs to full SaaS-style platforms. Comfortable owning projects end-to-end, including architecture, UI/UX, performance, and deployment.
+A full-stack developer with 10 years' professional experience building scalable, user-driven web applications across Laravel, Vue, and WordPress. Self-taught since 14, with a passion for building that never stopped. 50+ independent client projects delivered alongside agency experience at Speed Agency, owning work end-to-end from architecture and UI/UX through to performance optimisation and deployment. Increasingly working at the intersection of full-stack development and AI integration, with hands-on experience shipping AI-powered features, LLM-connected backends, and vector search with pgvector into production.
 
 ---
 
@@ -22,6 +19,7 @@ Focused on building scalable, user-driven applications - from custom CMS platfor
 - Laravel
 - PHP (modern OOP, performance-focused)
 - MySQL / PostgreSQL (including pgvector)
+- AI/LLM Integrations
 
 ### Frontend
 - Vue 3 + TypeScript
@@ -44,44 +42,46 @@ Focused on building scalable, user-driven applications - from custom CMS platfor
 ## Experience
 
 ### Speed.agency - Senior Developer
-United Kingdom | 2016 - Present
+2016 - Present *(Junior to Senior Developer progression)*
 
-Speed.agency is a UK digital agency delivering web platforms for fintech, medtech, and insurance clients. Progressed from junior developer to lead over the course of 10 years across key accounts including HSBC Life, BGL, and Compare The Market, working on everything from marketing sites and campaign microsites to long-running platforms with complex integrations and strict compliance requirements. Trusted to take ownership of flagship client work, drive technical direction across projects, and act as a steady point of contact for stakeholders when delivery pressure is high.
+Speed Agency is a UK digital agency delivering web platforms for fintech, medtech, and insurance clients. Progressed from junior developer to lead over 10 years, working across key accounts including HSBC Life, BGL, and Compare The Market, on everything from interactive marketing sites and campaign microsites to long-running platforms with complex integrations and strict compliance requirements.
 
 #### Full Development Cycle
-- Owned projects end-to-end from architecture through deployment
-- Built and shipped production Laravel and WordPress applications
+- Owned projects end-to-end from architecture through to deployment across Laravel and WordPress codebases
+- Built and shipped production applications using Laravel, PHP, MySQL, and PostgreSQL
 - Deployed and managed infrastructure across AWS, DigitalOcean, and WP Engine
-- Built modern WordPress, Laravel + Vue applications
+- Built modern component-driven frontends using Vue 3, TypeScript, and TailwindCSS
 
 #### Cross-Functional Collaboration
-- Worked closely with designers to translate UX into performant interfaces
-- Partnered with marketers, project managers, and stakeholders on requirements
-- Delivered full digital solutions aligned with commercial goals
+- Worked closely with designers to translate UX into performant Vue and TailwindCSS interfaces
+- Partnered with marketers, project managers, and stakeholders to define requirements and shape technical delivery
+- Delivered full digital solutions spanning Laravel backends, WordPress CMS builds, and modern frontend systems
 
 #### Critical Debugging & Incident Response
-- Diagnosed and resolved production issues under pressure
-- Refactored legacy systems and improved performance across inherited codebases
-- Managed active security incidents including live hacking situations
+- Diagnosed and resolved production issues across Laravel, PHP, and WordPress applications under pressure
+- Refactored and improved performance across inherited legacy codebases using modern PHP and Laravel patterns
+- Managed active security incidents including live hacking situations across Linux server environments running Apache and Nginx
+
+#### Regulated Environment Delivery
+- Delivered projects within heavily regulated fintech and insurance sectors including HSBC Life, BGL, and Compare The Market
+- Handled sensitive personally identifiable information (PII) with strict data governance across MySQL and PostgreSQL environments
+- Maintained clear and confident communication with high-pressure stakeholders under tight delivery constraints
 
 #### Hosting & Maintenance
-- Managed Ubuntu servers with Apache/Nginx across multiple client environments
-- Maintained ongoing support, monitoring, and feature development
-- Handled deployments, backups, and server-level troubleshooting
+- Managed Ubuntu servers with Apache and Nginx configurations across multiple client environments
+- Maintained ongoing support, monitoring, and feature development across Laravel and WordPress platforms
+- Handled deployments, backups, and server-level troubleshooting including Git-based deployment pipelines and CI/CD workflows
 
-#### Leadership & Soft Skills
-- Acted as lead developer on key accounts
-- Defined and maintained development standards across the team
-- Ran code reviews and mentored junior developers
+#### Leadership
+- Acted as lead developer on key accounts, setting technical direction across Laravel and WordPress projects
+- Defined and maintained development standards including Git branching strategies and code review processes
+- Ran code reviews, pair development and mentored junior developers across the full stack
 
 ---
 
-### StyleSeating - IT Support Apprentice
-Wisbech | 2015 - 2016
+## AI-Augmented Development
 
-- Maintained and improved the company website (EKM PowerShop)
-- Managed company social media accounts
-- Created and distributed email marketing campaigns
+Experienced using Claude and OpenAI Tooling as daily development tools to accelerate delivery without compromising code quality. Applied across scaffolding, refactoring, exploring unfamiliar APIs, reviewing diffs, and working through architectural decisions, while maintaining full ownership of final design, security posture, and production code. Comfortable integrating LLMs directly into products as well as leveraging them throughout the development workflow.
 
 ---
 
@@ -90,7 +90,7 @@ Wisbech | 2015 - 2016
 ### Novogamer
 https://novogamer.com
 
-A community-driven platform where gamers can write, discover, and share articles, reviews, and insights about video games. Features semantic search across content using vector embeddings, AI-assisted content discovery to surface related articles and recommendations, and an AI-driven trending topics fetcher that surfaces what the gaming world is talking about in real time. Also released as a Trusted Web Activity (TWA) Android app built on top of the main web experience.
+A community-driven platform where gamers can write, discover, and share articles, reviews, and insights about video games. Features semantic search across content using vector embeddings, AI-assisted content discovery to surface related articles and recommendations, and an AI-driven trending topics engine that surfaces what the gaming world is talking about in real time.
 
 **Tech:** Laravel, Inertia.js, Vue 3, TypeScript, TailwindCSS, Redis, pgvector, AI/LLM integration
 
@@ -99,7 +99,7 @@ A community-driven platform where gamers can write, discover, and share articles
 ### Bookbound
 https://bookbound.app
 
-Personal library and book tracking platform. Users catalogue books via barcode or manually, write reviews, add notes, and organise their collection with a focus on clean UX. Designed around a fast, mobile-friendly reading log workflow. Also released as a Trusted Web Activity (TWA) Android app built on top of the main web experience.
+Personal library and book tracking platform. Users catalogue books via barcode or manually, write reviews, add notes, and organise their collection with a focus on clean UX. Designed around a fast, mobile-friendly reading log workflow.
 
 **Tech:** Laravel, Inertia.js, Vue 3, TypeScript, TailwindCSS
 
@@ -114,7 +114,7 @@ Lightweight SEO tools for developers and marketers to quickly test and improve t
 
 ---
 
-### SEO Toolkit 2 (Unreleased)
+### Sitepulse (Unreleased)
 
 Full site monitoring and SEO auditing SaaS. Monitors uptime, SSL, broken links, DNS, and performance across multiple sites with real-time dashboard, alerting, and team support. Architected around queue workers and live broadcasting for continuous site health visibility.
 
@@ -122,41 +122,8 @@ Full site monitoring and SEO auditing SaaS. Monitors uptime, SSL, broken links, 
 
 ---
 
-### Browser.is
-https://browser.is
-
-A small, helpful tool that shows exactly what information a browser reveals (like fingerprints, IP, and settings). Built with client debugging in mind, useful for reproducing environment-specific bugs during support.
-
-**Tech:** Laravel, Blade, TailwindCSS
-
----
-
-## Technical Highlights
-
-- Built systems using Laravel + Inertia + Vue 3 + TypeScript
-- Implemented queue-based architectures using Redis and Laravel Horizon
-- Experience with real-time broadcasting and async workflows
-- Worked with vector embeddings and semantic search
-- Designed reusable component-driven frontend systems
-- Strong understanding of performance, caching, and scalability
-
----
-
-## AI-Augmented Development
-
-Use Claude and ChatGPT as daily tools to accelerate delivery without compromising code quality. Apply them for scaffolding, refactoring, exploring unfamiliar APIs, reviewing diffs, and rubber-ducking architectural decisions - while keeping ownership of the final design, security posture, and production code. Comfortable integrating LLMs into products as well as using them in the development workflow.
-
----
-
-## Self Learned
-
-Self-taught developer since the age of 14. Built a foundation in HTML, CSS, PHP, and JavaScript through personal projects long before entering the industry, and have continued to learn independently across backend, frontend, DevOps, and AI tooling throughout my career.
-
----
-
 ## Education
 
 Thomas Clarkson Academy, Wisbech
 
-- IT - A
-- A-C including Maths
+A-C including Maths, English & IT
