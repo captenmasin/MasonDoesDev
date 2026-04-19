@@ -11,7 +11,7 @@
   },
   "routes": [
     {
-      "pattern": "dev.masondoes.dev",
+      "pattern": "masondoes.dev",
       "custom_domain": true
     }
   ],
