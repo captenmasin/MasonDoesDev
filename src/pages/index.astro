@@ -8,9 +8,9 @@ import {getCollection, render} from "astro:content";
 
 const skillGroups = [
     { label: 'Backend', items: ['Laravel', 'PHP (modern OOP)', 'MySQL / PostgreSQL', 'Redis, queues, Horizon'] },
-    { label: 'Frontend', items: ['Vue 3 + TypeScript', 'Inertia.js', 'TailwindCSS', 'Component-driven UI'] },
+    { label: 'Frontend', items: ['Vue 3 + TypeScript', 'Alpine.js', 'Astro', 'Inertia.js', 'TailwindCSS', 'Component-driven UI'] },
     { label: 'CMS', items: ['WordPress', 'Custom themes & plugins', 'ACF', 'Headless CMS'] },
-    { label: 'Infrastructure', items: ['Linux (Ubuntu)', 'Apache / Nginx', 'Git, Vite, CI/CD', 'Server management'] },
+    { label: 'Infrastructure', items: ['Linux (Ubuntu)', 'Apache / Nginx', 'Git, Vite, CI/CD', 'Server management', 'Ploi'] },
 ];
 
 const projectEntries = (await getCollection('projects'))
